@@ -20,7 +20,7 @@ a {
 nav {
     width:100%;
     font-weight: 300;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgb(255, 255, 255);
     padding-left: 30px;
     padding-right: 10px;
     position: fixed;
@@ -67,6 +67,10 @@ nav {
 
 .link-last {
     margin-right: 25px;
+}
+
+.navbarlanding {
+    display: none;
 }
 
 
@@ -132,3 +136,66 @@ nav {
     display: none;
 }
 
+/*Main About Page*/
+
+.about-body {
+    background-color: rgb(247, 245, 250)
+}
+.enna-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    background-color: rgb(247, 245, 250);
+    color: rgb(0, 0, 0);
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.enna-header-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.enna-straight {
+    max-width: 100%;
+    width: 40vw;
+    height: auto;
+}
+
+.about-enna-title {
+    font-size: 70px;
+
+}
+
+.enna-about-socials {
+    display: flex;
+    gap: 1vw;
+}
+.social {
+    max-width: 4vw;
+}
+
+@media screen and (max-width: 680px) {
+    .enna-header-main {
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+    .enna-straight {
+        width: 75vw;
+        padding-top: 5vw;
+    }
+
+    .enna-about-socials {
+        display: flex;
+        gap: 2vw;
+        justify-content: center;
+    }
+
+    .social {
+        max-width: 10vw;
+    }
+}
+    
