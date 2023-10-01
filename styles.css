@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+   
+}
+
+body {
+    background-color:rgb(253, 253, 253)
+    /*background-image: url("https://img.freepik.com/premium-photo/antique-whispers-abstract-antique-white-hues-blur-vintage-background_954894-6156.jpg");*/ ;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    flex: 1;
+}
+
+nav {
+    width:100%;
+    font-weight: 300;
+    background-color: rgb(255, 254, 255);
+    padding-left: 30px;
+    padding-right: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom: 1px solid rgb(216, 209, 216);
+}
+
+.logo {
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+.nav-links a {
+    text-decoration:none;
+    padding: 2.5px 6.5px;
+    display: inline-block;
+    color: black;
+}
+
+.nav-links:hover a {
+}
+
+
+.navlogo {
+    min-width: 150px;
+    max-width: 12vw;
+}
+
+.link-last {
+    margin-right: 25px;
+}
+
+
+
+.mainlogo {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 70vw;
+    position: relative;
+    margin: 100px auto;
+    flex: 1;
+    
+}
+
+.logoabout {
+    display: none;
+}
+
+.enna-highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    min-height: 50vh;
+    padding-top: 330px;
+    padding-bottom: 330px;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 45px;
+    -webkit-text-stroke: black 2px;
+    top: -100px;
+}
+
+.enna-video {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%
+}
+
