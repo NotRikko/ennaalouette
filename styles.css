@@ -24,7 +24,7 @@ a {
 nav {
     width:100%;
     font-weight: 300;
-    background-color: rgba(255, 255, 255, 0.959);
+    background-color: rgb(255, 255, 255);
     padding-left: 30px;
     padding-right: 10px;
     position: fixed;
@@ -163,6 +163,9 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 8vw;
+    margin-top: 9vw;
+    margin-bottom: 9vw;
+    flex-wrap: wrap-reverse
 }
 
 .enna-header-text {
@@ -170,19 +173,16 @@ nav {
 }
 
 .enna-straight {
-    padding-top: 9vh;
-    padding-bottom: 9vh;
     max-width: 100%;
-    max-height: 85vh;
+    max-height: 70vh;
     border-radius: 30px;
+    border: solid white 3px;
 }
 
 
 .about-enna-title {
-    font-size: 60px;
+    font-size: 5vw;
     margin-bottom: 3vw;
-    text-shadow: 2px 2px white;
-
 }
 
 .enna-about-socials {
@@ -231,7 +231,7 @@ nav {
 }
 
 .debut {
-    font-size: 65px;
+    font-size: 5vw;
     color: white;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -239,12 +239,19 @@ nav {
     text-align: center;
 }
 
+.debut-vid {
+    max-width: 55%;
+    min-width: 10%;
+    max-height: 40%
+    position:relative;
+}
+
 #next-line-debut::before{
     content: "\a";
     white-space: pre;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
     .enna-header-main {
     flex-direction: column-reverse;
     align-items: center;
@@ -294,6 +301,7 @@ nav {
         flex-direction: column;
         gap: 5vw;
         height: 75vh;
+        padding-left: 0;
     }
 
     .debut {
@@ -305,5 +313,34 @@ nav {
     }
 }
 
+/*Covers Page*/
+.covers-body {
+    color: white;
+    padding-top: 100px;
+}
 
-    
+.covers-main {
+    display: flex;
+    flex-direction :column;
+    align-items: center;
+    gap: 4vw;
+}
+
+#cover-songs-title {
+    font-size: 5.5vw;
+}
+
+.cover-songs-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.cover-song {
+    max-width: 45%;
+    border-radius: 15px;
+    display: flex;
+
+}
